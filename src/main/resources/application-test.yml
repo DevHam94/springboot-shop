@@ -1,0 +1,11 @@
+#Datasource 설정
+spring:
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:test
+    username: sa
+    password:
+
+# H2 데이터베이스 방언 설정
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
