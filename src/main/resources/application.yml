@@ -19,9 +19,17 @@ spring:
         #???? ???? ??? ???? ?? ???
         format_sql: true
     database-platform: org.hibernate.dialect.MySQLDialect
+#Live Reload 기능 활성화
+  devtools:
+    livereload:
+      enabled: true
+#Thymeleaf cache 사용 중기
+  thymeleaf:
+    cache: false
 
 #??? ???? ???? ??? ???? ??
 logging:
   level:
 #    org.hibernate.SQL: debug
     org.hibernate.type.descriptor.sql: trace
+
