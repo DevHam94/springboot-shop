@@ -11,7 +11,7 @@ spring:
     password: 1234
   jpa:
     hibernate:
-      ddl-auto: create
+      ddl-auto: validate
     properties:
       hibernate:
         #???? ?? ?? ??
@@ -26,7 +26,13 @@ spring:
 #Thymeleaf cache 사용 중기
   thymeleaf:
     cache: false
+  servlet:
+    multipart:
+      max-file-size: 20MB
+      max-request-size: 100MB
 
+itemImgLocation: C:/shop/item
+uploadPath: file:///C:/shop/
 #??? ???? ???? ??? ???? ??
 logging:
   level:
